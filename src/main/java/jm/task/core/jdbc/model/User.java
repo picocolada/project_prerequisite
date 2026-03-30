@@ -6,6 +6,8 @@ import javax.persistence.Table;
 
 @Table
 public class User {
+
+    // "Все поля должны быть закрытыми (private)." - это про поля в этом классе?
     @Id
     private Long id;
 

@@ -8,7 +8,7 @@ public class UserDaoHibernateImpl implements UserDao {
     public UserDaoHibernateImpl() {
 
     }
-
+// здесь пока ничего не трогаем? этот файл будет использоваться в следующих уроках?
 
     @Override
     public void createUsersTable() {
