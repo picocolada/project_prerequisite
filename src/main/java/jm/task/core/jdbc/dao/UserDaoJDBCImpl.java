@@ -3,7 +3,7 @@ package jm.task.core.jdbc.dao;
 import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.util.Util;
 
-import java.security.spec.RSAOtherPrimeInfo;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +29,6 @@ public class UserDaoJDBCImpl implements UserDao {
         )
         {
             stmt.executeUpdate();
-            System.out.println("Table created successfully");
         }
         catch (SQLException e){
             throw new RuntimeException("Failed to create table", e);
@@ -45,7 +44,6 @@ public class UserDaoJDBCImpl implements UserDao {
         )
         {
             stmt.executeUpdate();
-            System.out.println("Table deleted successfully");
         }
         catch (SQLException e){
             throw new RuntimeException("Failed to delete table", e);
@@ -64,7 +62,6 @@ public class UserDaoJDBCImpl implements UserDao {
             stmt.setString(2, lastName);
             stmt.setByte(3, age);
             stmt.executeUpdate();
-            System.out.println("User " + name + " " + lastName + ", " + age + " years old, was added to database");
         }
         catch (SQLException e){
             throw new RuntimeException("Failed to save user", e);
@@ -81,7 +78,6 @@ public class UserDaoJDBCImpl implements UserDao {
         ){
             stmt.setLong(1, id);
             stmt.executeUpdate();
-            System.out.println("User with id = " + id + " was deleted");
         }
         catch (SQLException e){
             throw new RuntimeException("Failed to delete user", e);
@@ -105,7 +101,6 @@ public class UserDaoJDBCImpl implements UserDao {
                         rs.getByte("age")
                 );
                 users.add(user);
-                System.out.println(user);
             }
         }
         catch (SQLException e){
@@ -121,7 +116,6 @@ public class UserDaoJDBCImpl implements UserDao {
                 PreparedStatement stmt = connection.prepareStatement(sql);
         ){
             stmt.executeUpdate();
-            System.out.println("Table was cleared");
         }
         catch (SQLException e){
             throw new RuntimeException("Failed to clear table", e);
