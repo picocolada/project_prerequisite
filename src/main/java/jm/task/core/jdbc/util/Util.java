@@ -10,7 +10,6 @@ public class Util {
     private static final String USER = "root";
     private static final String PASSWORD = "root";
 
-    //беру пример из видео - непонятно почему не закрываем соединение
     public static Connection getConnection(){
         try {
             return DriverManager.getConnection(URL, USER, PASSWORD);
@@ -19,15 +18,5 @@ public class Util {
             throw new RuntimeException(e);
         }
     }
-
-    /*
-    здесь не очень поняла, почему IDE ругается на пример из прошлого урока с try-with-resources:
-    try (Connection connection = DriverManager.getConnection(URL, USER, PASSWORD)) {
-            System.out.println("✅ Соединение установлено успешно!");
-        } catch (SQLException e) {
-            System.out.println("❌ Ошибка подключения: " + e.getMessage());
-        }
-
-     */
 
 }

@@ -3,7 +3,6 @@ package jm.task.core.jdbc.dao;
 import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.util.Util;
 
-import java.security.spec.RSAOtherPrimeInfo;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -99,7 +98,6 @@ public class UserDaoJDBCImpl implements UserDao {
             System.out.println("List of users:");
             while (rs.next()){
                 User user = new User(
-                        rs.getLong("id"),
                         rs.getString("name"),
                         rs.getString("lastName"),
                         rs.getByte("age")
