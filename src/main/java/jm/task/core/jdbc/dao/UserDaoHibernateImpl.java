@@ -1,6 +1,6 @@
 package jm.task.core.jdbc.dao;
 
-import jakarta.persistence.Query;
+
 import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.util.HibernateUtil;
 import org.hibernate.Session;
@@ -15,7 +15,23 @@ public class UserDaoHibernateImpl implements UserDao {
 
     @Override
     public void createUsersTable() {
-        // не особо понятно что тут писать, таблица итак автоматически создается
+        String sql = "CREATE TABLE IF NOT EXISTS users (" +
+                "id BIGINT PRIMARY KEY AUTO_INCREMENT, " +
+                "name VARCHAR(255) NOT NULL, " +
+                "lastName VARCHAR(255), " +
+                "age TINYINT" +
+                ")";
+        try (Session session = HibernateUtil
+                .getSessionFactory()
+                .openSession()) {
+            Transaction tx = session.beginTransaction();
+
+            session.createNativeQuery(sql).executeUpdate();
+
+            tx.commit();
+        } catch (Exception e) {
+            throw new RuntimeException("Failed to create table\n", e);
+        }
     }
 
     @Override
@@ -59,8 +75,9 @@ public class UserDaoHibernateImpl implements UserDao {
             Transaction tx = session.beginTransaction();
 
             User user = session.get(User.class, id);
-            session.delete(user);
-
+            if (user != null) {
+                session.delete(user);
+            }
             tx.commit();
         } catch (Exception e) {
             throw new RuntimeException("Failed to delete user\n", e);
