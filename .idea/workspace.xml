@@ -5,23 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d5f3992-c5be-42a7-ae53-885a50019842" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/config/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/model/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/model/AnimalsCage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/model/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/model/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/model/Timer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/feast/TraditionalFeast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/feast/models/Camel8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/feast/models/Chicken3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/feast/models/Duck2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/feast/models/Fish1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/feast/models/Goat6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/feast/models/Horse7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/feast/models/Lamb5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/feast/models/Pig4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AppConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HelloWorld.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AppConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/feast/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/feast/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/model/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/model/AnimalsCage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/model/Cat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/model/Dog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/model/Timer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/config/AppConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/model/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/model/AnimalsCage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/model/Cat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/model/Dog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/model/Timer.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +73,7 @@
     "Application.App.executor": "Run",
     "Application.Application.executor": "Run",
     "Application.Main.executor": "Run",
+    "JUnit.MainTest.executor": "Run",
     "JUnit.UserServiceTest.cleanUsersTable.executor": "Run",
     "JUnit.UserServiceTest.createUsersTable.executor": "Run",
     "JUnit.UserServiceTest.dropUsersTable.executor": "Run",
@@ -76,7 +86,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "spring__task__2",
+    "git-widget-placeholder": "spring__task__3",
     "kotlin-language-version-configured": "true",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "MavenSettings",
@@ -102,11 +112,11 @@
       </method>
     </configuration>
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="app.Application" />
+      <option name="MAIN_CLASS_NAME" value="feast.Application" />
       <module name="TaskJDBC" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="app.*" />
+          <option name="PATTERN" value="feast.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
