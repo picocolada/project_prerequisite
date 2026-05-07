@@ -6,8 +6,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class Camel8 {
 
-    @Autowired
-    private Camel8 camel8;
 
     @Override
     public String toString() {
