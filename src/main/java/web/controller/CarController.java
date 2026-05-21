@@ -5,15 +5,15 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import web.service.CarServiceImpl;
+import web.service.CarService;
 
 
 @Controller
 @RequestMapping("/cars")
 public class CarController {
-    private final CarServiceImpl carService;
+    private final CarService carService;
 
-    public CarController(CarServiceImpl carService) {
+    public CarController(CarService carService) {
         this.carService = carService;
     }
 
